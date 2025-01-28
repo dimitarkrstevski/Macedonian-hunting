@@ -17,44 +17,32 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./offers.html">Offers</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="offersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Offers</a>
-                        <ul class="dropdown-menu" aria-labelledby="offersDropdown">
-                            <li><a class="dropdown-item" href="#">Offer 1</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 2</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 3</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 4</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 5</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 6</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 7</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 8</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 9</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 10</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 11</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 12</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 13</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 14</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 15</a></li>
-                            <li><a class="dropdown-item" href="#">Offer 16</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="#">Game</a></li>
+                            <li><a class="dropdown-item" href="#">Nature</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Games</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">MACEDONIAN HUNTING</h1>
@@ -80,32 +68,30 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="py-5">
+    <section id="contact" class="contact-form-section py-5">
         <div class="container">
-            <h2 class="text-center mb-4" style="color: var(--golden-yellow);">Gallery</h2>
-            <div class="row gallery">
-                <div class="col-md-3">
-                    <img src="" alt="Photo 1" class="img-fluid">
+            <h2 class="text-center mb-4" style="color: var(--golden-yellow);">CONTACT US</h2>
+            <form class="hunting-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                 </div>
-                <div class="col-md-3">
-                    <img src="" alt="Photo 2" class="img-fluid">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                 </div>
-                <div class="col-md-3">
-                    <img src="" alt="Photo 3" class="img-fluid">
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
                 </div>
-                <div class="col-md-3">
-                    <img src="" alt="Photo 4" class="img-fluid">
-                </div>
-            </div>
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
         </div>
     </section>
-
-    <!-- Footer -->
+    
     <footer class="footer">
         <p>&copy; 2025 Macedonian Hunting. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

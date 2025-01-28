@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="#">Game</a></li>
+                            <li><a class="dropdown-item" href="#">Nature</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Photo Upload Form -->
+     <div class="container my-5 gallery-section">
+        <h2 class="text-center mb-4" id="gallerytitle">Upload Photo to Gallery</h2>
+        <form class="gallery-form" action="submit_photo.php" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="photoTitle" class="form-label">Photo Title</label>
+                <input type="text" class="form-control" id="photoTitle" name="photoTitle" placeholder="Enter photo title" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="photoDescription" class="form-label">Photo Description</label>
+                <textarea class="form-control" id="photoDescription" name="photoDescription" rows="3" placeholder="Enter photo description" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="photo" class="form-label">Upload Photo</label>
+                <input class="form-control" type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="submit-btn">Upload Photo</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Macedonian Hunting. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
