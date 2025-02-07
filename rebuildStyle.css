@@ -423,6 +423,108 @@ header .d-flex a {
     }
     
 }
-  
-  
+#portfolio_animal_prices{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+#portfolio_title_animal{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--golden-yellow);
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+#portfolio_photo_animal{
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+#wild-boar-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: flex-start;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    padding-top: 25px;
+    padding-left: 0px;
+}
+
+.container_portfolio_animal {
+    padding-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Apply golden-yellow color to specific headings and labels */
+.details h2,
+.details ul li strong {
+    color: var(--golden-yellow);
+}
+
+.details ul li strong {
+    color: var(--golden-yellow);
+    font-size: 18px;
+}
+
+.details{
+    max-width: 500px;
+}
+
+#portfolio_animal_prices h2, h3 {
+    color: var(--golden-yellow);
+}
+
+#portfolio_animal_prices li{
+    font-size: 16px;
+}
+
+/* rebuild v2 */
+#our_packages_v2Rebuild{
+    max-width: 1220px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 15px; /* Added padding to space content inside */
+    text-align: center; /* Centers the content */
+    margin: 0 auto; /* Centering the entire section */
+}
+/* Title */
+#our_packages_v2Rebuild h3 {
+    background-color: beige;
+    color: black;
+    font-weight: bold;
+    padding: 10px 0; /* Proper padding instead of fixed width */
+    margin-bottom: 15px;
+    display: block; /* Full width but still within container */
+    width: 100%;
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Carousel image styling */
+#our_packages_v2Rebuild .carousel-inner img {
+    height: 150px;
+    object-fit: scale-down; 
+    width: auto; 
+    max-width: 180%;
+    border: 5px solid white; 
+}
+#our_packages_v2Rebuild .carousel-inner img:hover{
+    border: 5px solid var(--golden-yellow);
+    cursor: pointer;
+}
+.clickable-image {
+    cursor: pointer;
+}
+
+
+
+
+
 
