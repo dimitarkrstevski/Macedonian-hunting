@@ -1,0 +1,620 @@
+:root {
+    --dark-green: #2c3e30;
+    --medium-green: #3c523b;
+    --light-green: #4b6947;
+    --golden-yellow: #d4a35b;
+    --text-white: #ffffff;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--dark-green);
+    color: var(--text-white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #3c523b;  /* Set the navbar background color to medium green */
+    width: 80%;  /* Set the navbar width to be smaller (80% of the screen width) */
+    margin: 0 auto;  /* Center the navbar */
+    border-radius: 8px;
+    position: relative;
+    z-index: 1000; /* Ensure navbar stays on top */
+}
+
+/* Ensure navbar items are aligned properly */
+.navbar-nav .nav-link, .navbar-nav .btn {
+    color: var(--text-white);  /* Set the text color to white */
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;  /* Remove underline for better button look */
+}
+
+/* Hover effects */
+.navbar-nav .nav-link:hover, .navbar-nav .btn:hover {
+    color: var(--golden-yellow);  /* On hover, change the color to golden yellow */
+}
+
+/* Navbar toggler styles */
+.navbar-toggler {
+    background-color: var(--text-white); /* Maintain the white color for toggler icon */
+    border: none;
+}
+
+/* Navbar center alignment */
+.navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+
+/* Style for dropdown buttons */
+.navbar-nav .dropdown-toggle {
+    background: none;  /* Remove default button styles */
+    border: none;
+    padding: 0;
+    font-size: 16px;  /* Adjust size for consistency */
+    color: var(--text-white);  /* Set dropdown button text color to white */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #3c523b;
+    border: none;
+}
+
+.dropdown-item {
+    color: var(--text-white);  /* Set dropdown item text color to white */
+}
+
+.dropdown-item:hover {
+    background-color: var(--dark-green);
+    color: var(--golden-yellow);  /* Change the text color to golden yellow on hover */
+}
+
+/* Ensuring dropdown-toggle button stays golden-yellow when clicked */
+.navbar-nav .dropdown-toggle:focus {
+    color: var(--golden-yellow);  /* Change color to golden-yellow when the button is focused */
+    box-shadow: none; /* Remove the focus outline */
+}
+
+/* Add active state for dropdown item when clicked */
+.navbar-nav .dropdown-item.active {
+    background-color: var(--dark-green); /* Maintain background when item is active */
+    color: var(--golden-yellow);  /* Ensure the active item is golden yellow */
+}
+
+/* Dropdown open styles (to keep the dropdown button golden-yellow when active) */
+.navbar-nav .dropdown-menu.show {
+    background-color: #3c523b;  /* Ensure dropdown stays in the right color */
+}
+
+
+/* Form input (Search bar) */
+.form-control {
+    background-color: var(--light-green);  /* Set the background color to dark green */
+    color: #fff;  /* Set the text color to white for contrast */
+    border: 1px solid var(--text-white);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background-color: var(--light-green); /* Maintain dark green on focus */
+    color: #fff; /* Keep white text */
+    border: 1px solid var(--golden-yellow); /* Keep the golden-yellow border on focus */
+    box-shadow: none; /* Remove default blue shadow */
+}
+
+/* Search button */
+.btn-outline-success {
+    background-color: var(--dark-green);
+    border: 1px solid var(--text-white);
+    color: #fff;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--golden-yellow);
+    color: #000;
+}
+
+/* Styling for search icon */
+.bi-search {
+    font-size: 18px;
+}
+
+
+
+/* Hero Section */
+header {
+    display: flex;
+    justify-content: space-between; /* Push content to both sides */
+    align-items: center; /* Center vertically */
+    background-color: var(--dark-green);
+    padding: 10px; /* Add some padding to avoid touching the edges */
+    padding-top: 50px;
+}
+
+/* Styling for logo */
+.img-fluid {
+    max-width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+    padding-left: 140px; /* Optional: Add padding to the left side for the image */
+}
+
+/* Icon container (right aligned) */
+header .d-flex {
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center;
+    padding-right: 140px;
+}
+
+/* Icon and flag styling */
+header .d-flex a {
+    color: white;
+    font-size: 1.5rem; /* Set size for icon */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for icons */
+header .d-flex a:hover {
+    color: #f1c40f; /* Golden yellow on hover */
+}
+
+/* For social media icons (Font Awesome or Bootstrap icons) */
+header .d-flex a i {
+    width: 30px; /* Set the icon size */
+    height: 30px; /* Set the height for icons */
+    display: inline-block;
+    text-align: center;
+}
+
+/* For language flags */
+.language-icon {
+    width: 32x; /* Set the flag size */
+    height: 30px; /* Ensure the flag is proportional */
+}
+/* Add spacing between the icons */
+header .d-flex a {
+    margin-left: 15px; /* Space between icons */
+}
+
+
+/* Carousel customization */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;  /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 94%;  /* Limit the size of the image to 80% of its parent container */
+    margin: 0 auto;  /* Center the image */
+    object-fit: contain;  /* Make sure the image fits without distortion */
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /*shadow for better readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for contrast */
+    color: var(--golden-yellow);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hide the text */
+    animation: fadeIn 1.5s ease-out 0.5s forwards; /* Animation with delay */
+}
+/* fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+.carousel-caption label{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Container section padding */
+.container {
+    padding-bottom: 50px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--medium-green);
+    padding: 20px 0;
+    text-align: center;
+    color: var(--text-white);
+}
+
+.footer a {
+    color: var(--golden-yellow);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    width: 94%; 
+    margin: 0 auto;
+    background-color: var(--medium-green); 
+    padding: 10px; 
+}
+
+.photo-item {
+    width: 23%; 
+    margin: 5px; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column; /* Stack the title, image, and caption vertically */
+}
+
+.photo-item img {
+    width: 100%; 
+    height: auto; 
+    border: 2px solid var(--medium-green);
+    margin-bottom: 0; /* No space below the image */
+}
+
+.photo-caption {
+    color: var(--text-white); 
+    font-size: 14px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px; 
+    width: 100%; 
+    height: 130px;
+    box-sizing: border-box; 
+    text-align: center;
+    margin-top: 0; /* No space above the caption */
+    position: relative; /* Make the container relative to position the button inside */
+}
+.photo-title {
+    color: var(--golden-yellow); 
+    font-weight: bold;
+    font-size: 20px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center;
+    margin-bottom: 0; /* No space below the title */
+}
+
+.more-button {
+    background-color: var(--dark-green);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: absolute; /* Absolute positioning relative to .photo-caption */
+    left:100px; /* Position the button 10px from the left */
+    bottom: 10px; /* Position the button 10px from the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color:var(--golden-yellow) /* Darker shade for hover effect */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--golden-yellow);
+}
+
+.gallery .col-md-3 {
+    margin-bottom: 20px;
+}
+
+.arrow-button{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--golden-yellow);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow-button:hover {
+    color: black;
+  }
+
+  /* Media Query for Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center the content */
+    }
+
+    /* Ensure icons stack under logo on mobile */
+    header .d-flex {
+        justify-content: center; /* Center icons on mobile */
+        margin-top: 10px;
+    }
+
+    /* Adjust size for mobile */
+    header .d-flex a {
+        font-size: 1.2rem; /* Slightly smaller icons on mobile */
+        margin-left: 10px; /* Space between icons */
+    }
+
+    /* Adjust flag size for mobile */
+    .language-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Optional: Reduce logo size on mobile */
+    .img-fluid {
+        max-width: 80%; /* Make logo smaller on mobile */
+    }
+
+    .navbar {
+        margin: 0;
+        border-radius: 0;
+    }
+    /* Responsive adjustments for the scroll button */
+    .arrow-button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+      }
+
+
+     /* Responsive gallery for mobile */
+    .photo-gallery {
+        display: block; /* Stack items vertically */
+        padding: 5px; /* Smaller padding */
+    }
+    .photo-item {
+        width: 100%; /* Full width for each item on mobile */
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .photo-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .photo-caption {
+        font-size: 12px; /* Adjust caption font size */
+        height: auto; /* Let caption adjust dynamically */
+        padding: 8px;
+    }
+
+    .photo-title {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .more-button {
+        font-size: 12px;
+        padding: 6px 12px;
+        position: static; /* Ensure button stays inside the caption on mobile */
+        margin-top: 5px;
+        display: inline-block;
+    }
+    
+}
+#portfolio_animal_prices{
+    padding-left: 150px;
+    padding-top: 20px;
+    max-width: 800px;
+}
+
+#portfolio_title_animal{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--golden-yellow);
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+#portfolio_photo_animal{
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+#wild-boar-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: flex-start;
+    /*width: 20px;*/
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    padding-top: 30px; 
+    width: 800px;
+}
+
+.container_portfolio_animal {
+    padding-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    
+}
+
+.price_title{
+    color: var(--golden-yellow);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Apply golden-yellow color to specific headings and labels */
+.details h2,
+.details ul li strong {
+    color: var(--golden-yellow);
+    text-align: center;
+    padding: 5px;
+}
+
+.details ul li strong {
+    color: var(--golden-yellow);
+    font-size: 24px;
+}
+
+.details ul {
+    list-style-type:disc;
+    margin-left: 20px;
+  }
+
+  .details ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+
+.details {
+    max-width: 493px;
+    border: 4px solid var(--golden-yellow); /* Adds a white frame */
+    padding: 10px; /* Optional: Space inside the frame */
+    border-radius: 8px; /* Optional: Rounded corners for a smoother look */
+}
+.appointment-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#appointment-button {
+    background-color: var(--light-green);
+    color: var(--text-white);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#appointment-button:hover{
+    background-color: var(--golden-yellow);
+}
+
+
+#portfolio_animal_prices label{
+    color: var(--golden-yellow);
+    font-weight: bold;
+    font-size: 30px;;
+}
+
+#portfolio_animal_prices li{
+    font-size: 16px;
+}
+
+
+/* rebuild v2 */
+#our_packages_v2Rebuild{
+    max-width: 1220px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 15px; /* Added padding to space content inside */
+    text-align: center; /* Centers the content */
+    margin: 0 auto; /* Centering the entire section */
+}
+/* Title */
+#our_packages_v2Rebuild h3 {
+    background-color: beige;
+    color: black;
+    font-weight: bold;
+    padding: 10px 0; /* Proper padding instead of fixed width */
+    margin-bottom: 15px;
+    display: block; /* Full width but still within container */
+    width: 100%;
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Carousel image styling */
+#our_packages_v2Rebuild .carousel-inner img {
+    height: 150px;
+    object-fit: scale-down; 
+    width: auto; 
+    max-width: 180%;
+    border: 5px solid white; 
+}
+#our_packages_v2Rebuild .carousel-inner img:hover{
+    border: 5px solid var(--golden-yellow);
+    cursor: pointer;
+}
+.clickable-image {
+    cursor: pointer;
+}
+
+#portfolio_animal_prices2{
+    padding-left: 150px;
+    padding-top: 20px;
+    max-width: 800px;
+    font-size: 16px;
+    flex: 1;
+}
+#portfolio_animal_prices3 {
+    max-width: 587px;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  #portfolio_animal_prices3 label{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--golden-yellow);
+  }
+#portfolio_animal_prices2 li{
+    font-size: 16px;
+}
+
+#portfolio_animal_prices_wrapper {
+    display: flex;
+  }
+
+#portfolio_animal_prices3 li {
+    font-size: 16px;
+}
+.other-conditions-label {
+    color: var(--golden-yellow);
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
