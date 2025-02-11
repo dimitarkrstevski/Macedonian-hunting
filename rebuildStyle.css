@@ -4,6 +4,16 @@
     --light-green: #4b6947;
     --golden-yellow: #d4a35b;
     --text-white: #ffffff;
+
+
+    --masilnasta-navbar: #4c513e;
+    --footer-boja: #272b27;
+    --our-packages: #cdcbb1;
+    --button-hover:#e6b069;
+    --button:#61664e;
+    --navbar-boja:#565c46;
+    --navbar-bojabukve:#eae7c7;
+    --boja:#353931;
 }
 
 /* Body styles */
@@ -13,11 +23,12 @@ body {
     color: var(--text-white);
     margin: 0;
     padding: 0;
+    background-image:url(./v2images/background_image.jpg);
 }
 
 /* Navbar styles */
 .navbar {
-    background-color: #3c523b;  /* Set the navbar background color to medium green */
+    background-color: var(--navbar-boja);  /* Set the navbar background color to medium green */
     width: 80%;  /* Set the navbar width to be smaller (80% of the screen width) */
     margin: 0 auto;  /* Center the navbar */
     border-radius: 8px;
@@ -27,7 +38,7 @@ body {
 
 /* Ensure navbar items are aligned properly */
 .navbar-nav .nav-link, .navbar-nav .btn {
-    color: var(--text-white);  /* Set the text color to white */
+    color: #eae7c7;  /* Set the text color to white */
     margin: 0 10px;
     font-weight: bold;
     text-decoration: none;  /* Remove underline for better button look */
@@ -88,20 +99,20 @@ body {
 
 /* Dropdown open styles (to keep the dropdown button golden-yellow when active) */
 .navbar-nav .dropdown-menu.show {
-    background-color: #3c523b;  /* Ensure dropdown stays in the right color */
+    background-color: var(--navbar-boja);  /* Ensure dropdown stays in the right color */
 }
 
 
 /* Form input (Search bar) */
 .form-control {
-    background-color: var(--light-green);  /* Set the background color to dark green */
+    background-color: var(--boja);  /* Set the background color to dark green */
     color: #fff;  /* Set the text color to white for contrast */
     border: 1px solid var(--text-white);
     border-radius: 5px;
 }
 
 .form-control:focus {
-    background-color: var(--light-green); /* Maintain dark green on focus */
+    background-color: var(--boja); /* Maintain dark green on focus */
     color: #fff; /* Keep white text */
     border: 1px solid var(--golden-yellow); /* Keep the golden-yellow border on focus */
     box-shadow: none; /* Remove default blue shadow */
@@ -109,7 +120,7 @@ body {
 
 /* Search button */
 .btn-outline-success {
-    background-color: var(--dark-green);
+    background-color: var(--boja);
     border: 1px solid var(--text-white);
     color: #fff;
 }
@@ -117,6 +128,7 @@ body {
 .btn-outline-success:hover {
     background-color: var(--golden-yellow);
     color: #000;
+    
 }
 
 /* Styling for search icon */
@@ -131,7 +143,7 @@ header {
     display: flex;
     justify-content: space-between; /* Push content to both sides */
     align-items: center; /* Center vertically */
-    background-color: var(--dark-green);
+    
     padding: 10px; /* Add some padding to avoid touching the edges */
     padding-top: 50px;
 }
@@ -228,7 +240,7 @@ header .d-flex a {
 
 /* Footer */
 .footer {
-    background-color: var(--medium-green);
+    background-color: var(--footer-boja);
     padding: 20px 0;
     text-align: center;
     color: var(--text-white);
@@ -249,7 +261,7 @@ header .d-flex a {
     flex-wrap: wrap; 
     width: 94%; 
     margin: 0 auto;
-    background-color: var(--medium-green); 
+    background-color: var(--navbar-boja); 
     padding: 10px; 
 }
 
@@ -271,7 +283,8 @@ header .d-flex a {
 .photo-caption {
     color: var(--text-white); 
     font-size: 14px; 
-    background-color: rgba(0, 0, 0, 0.6); 
+    /* background-color: rgba(0, 0, 0, 0.6);  STARA BOJA */
+    background-color: var(--footer-boja);
     padding: 10px; 
     width: 100%; 
     height: 130px;
@@ -284,7 +297,8 @@ header .d-flex a {
     color: var(--golden-yellow); 
     font-weight: bold;
     font-size: 20px; 
-    background-color: rgba(0, 0, 0, 0.6); 
+    /* background-color: rgba(0, 0, 0, 0.6);  STARA BOJA */
+    background-color: var(--footer-boja);
     padding: 10px;
     width: 100%; 
     box-sizing: border-box; 
@@ -489,15 +503,16 @@ header .d-flex a {
 
 /* rebuild v2 */
 #our_packages_v2Rebuild{
-    max-width: 1220px;
-    background-color: rgba(0, 0, 0, 0.6); 
+    max-width: 1220px; 
+    /* background-color: rgba(0, 0, 0, 0.6); STARA BOJA */
+    background-color: var(--footer-boja);
     padding: 15px; /* Added padding to space content inside */
     text-align: center; /* Centers the content */
     margin: 0 auto; /* Centering the entire section */
 }
 /* Title */
 #our_packages_v2Rebuild h3 {
-    background-color: beige;
+    background-color: var(--our-packages);
     color: black;
     font-weight: bold;
     padding: 10px 0; /* Proper padding instead of fixed width */
@@ -521,6 +536,10 @@ header .d-flex a {
 }
 .clickable-image {
     cursor: pointer;
+}
+
+.background_fix{
+    background-color:var(--boja) ;
 }
 
 
