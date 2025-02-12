@@ -18,7 +18,8 @@
 
 /* Body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300; /* Light */
     background-color: var(--dark-green);
     color: var(--text-white);
     margin: 0;
@@ -36,16 +37,63 @@ body {
     z-index: 1000; /* Ensure navbar stays on top */
 }
 
+
 /* Ensure navbar items are aligned properly */
-.navbar-nav .nav-link, .navbar-nav .btn {
-    color: #eae7c7;  /* Set the text color to white */
+.navbar-nav .nav-link, .navbar-nav .btn , .dropdown-toggle{
+    color: var(--navbar-bojabukve );  /* Set the text color to white */ /*OVDE SMENI PROBAJ!*/
     margin: 0 10px;
     font-weight: bold;
     text-decoration: none;  /* Remove underline for better button look */
 }
 
+
+/*NAVBAR BUTTONS & DROPDOWN */
+#aboutUsButtonDropdown{
+    color: var(--navbar-bojabukve);
+}
+#aboutUsButtonDropdown:hover{
+    color: var(--golden-yellow);
+}
+#aboutUsButtonDropdown:focus{
+    color: var(--button-hover);
+}
+
+#smallGameDropdown{
+    color: var(--navbar-bojabukve);
+}
+#smallGameDropdown:hover{
+    color: var(--button-hover);
+}
+#smallGameDropdown:focus{
+    color: var(--button-hover);
+}
+#bigGameDropdown{
+    color: var(--navbar-bojabukve);
+}
+#bigGameDropdown:hover{
+    color: var(--button-hover);
+}
+#bigGameDropdown:focus{
+    color: var(--button-hover);
+}
+#galleryDropdown{
+    color: var(--navbar-bojabukve);
+}
+#galleryDropdown:hover{
+    color: var(--button-hover);
+}
+#galleryDropdown:focus{
+    color: var(--button-hover);
+}
+#navbarDropdownItems{
+    color: var(--navbar-bojabukve);
+}
+#navbarDropdownItems:hover{
+    color: var(--button-hover);
+}
+
 /* Hover effects */
-.navbar-nav .nav-link:hover, .navbar-nav .btn:hover {
+.navbar-nav .nav-link:hover, .navbar-nav .btn:hover{
     color: var(--golden-yellow);  /* On hover, change the color to golden yellow */
 }
 
@@ -70,9 +118,11 @@ body {
     color: var(--text-white);  /* Set dropdown button text color to white */
 }
 
+
+
 /* Dropdown menu styling */
 .dropdown-menu {
-    background-color: #3c523b;
+    background-color: #3c523b; 
     border: none;
 }
 
@@ -81,7 +131,8 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: var(--dark-green);
+    /*background-color: var(--dark-green);*/
+    background-color: var(--boja);
     color: var(--golden-yellow);  /* Change the text color to golden yellow on hover */
 }
 
@@ -114,7 +165,7 @@ body {
 .form-control:focus {
     background-color: var(--boja); /* Maintain dark green on focus */
     color: #fff; /* Keep white text */
-    border: 1px solid var(--golden-yellow); /* Keep the golden-yellow border on focus */
+    border: 1px solid var(--button-hover); /* Keep the golden-yellow border on focus */
     box-shadow: none; /* Remove default blue shadow */
 }
 
@@ -126,11 +177,10 @@ body {
 }
 
 .btn-outline-success:hover {
-    background-color: var(--golden-yellow);
-    color: #000;
-    
+    background-color: var(--button-hover);
+    color: #fff;
+    border: 1px solid var(--button-hover);
 }
-
 /* Styling for search icon */
 .bi-search {
     font-size: 18px;
@@ -165,14 +215,16 @@ header .d-flex {
 
 /* Icon and flag styling */
 header .d-flex a {
-    color: white;
+    color: var(--navbar-bojabukve);
     font-size: 1.5rem; /* Set size for icon */
     transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(50, 30, 10, 0.8); /* Dark brown shadow */
 }
 
 /* Hover effect for icons */
 header .d-flex a:hover {
-    color: #f1c40f; /* Golden yellow on hover */
+    color:var(--button-hover); /* Golden yellow on hover */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); /* Deep black shadow */
 }
 
 /* For social media icons (Font Awesome or Bootstrap icons) */
@@ -341,7 +393,7 @@ header .d-flex a {
     right: 40px;
     width: 50px;
     height: 50px;
-    background-color: var(--golden-yellow);
+    background-color: var(--button-hover);
     color: white;
     border: none;
     border-radius: 50%;
@@ -351,92 +403,114 @@ header .d-flex a {
     display: none; /* Initially hidden */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
-  }
+}
+ 
   
   .arrow-button:hover {
     color: black;
   }
 
-  /* Media Query for Mobile */
+
+
+  /* Mobile-first responsive design */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center the content */
+    /* Adjust the body background image */
+    body {
+        background-size: cover;
     }
 
-    /* Ensure icons stack under logo on mobile */
-    header .d-flex {
-        justify-content: center; /* Center icons on mobile */
-        margin-top: 10px;
-    }
-
-    /* Adjust size for mobile */
-    header .d-flex a {
-        font-size: 1.2rem; /* Slightly smaller icons on mobile */
-        margin-left: 10px; /* Space between icons */
-    }
-
-    /* Adjust flag size for mobile */
-    .language-icon {
-        width: 25px;
-        height: 25px;
-    }
-
-    /* Optional: Reduce logo size on mobile */
-    .img-fluid {
-        max-width: 80%; /* Make logo smaller on mobile */
-    }
-
+    /* Navbar */
     .navbar {
-        margin: 0;
-        border-radius: 0;
-    }
-    /* Responsive adjustments for the scroll button */
-    .arrow-button {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        bottom: 15px;
-        right: 15px;
-      }
-
-
-     /* Responsive gallery for mobile */
-    .photo-gallery {
-        display: block; /* Stack items vertically */
-        padding: 5px; /* Smaller padding */
-    }
-    .photo-item {
-        width: 100%; /* Full width for each item on mobile */
-        margin: 10px 0;
-        text-align: center;
+        width: 100%;  /* Make the navbar full width */
+        border-radius: 0;  /* Remove rounded corners */
     }
 
-    .photo-item img {
-        width: 100%;
+    .navbar-nav {
+        flex-direction: column;  /* Stack navbar items vertically */
+        text-align: center;  /* Center-align items */
+    }
+
+    /* Navbar item adjustments */
+    .navbar-nav .nav-link, 
+    .navbar-nav .btn, 
+    .dropdown-toggle {
+        font-size: 14px;  /* Reduce font size for smaller screens */
+        margin: 5px 0;  /* Decrease margin */
+    }
+
+    /* Navbar toggler icon adjustments */
+    .navbar-toggler {
+        background-color: var(--text-white); 
+        border: none;
+        font-size: 20px;  /* Increase the size of the toggler icon */
+    }
+
+    /* Hero Section */
+    header {
+        flex-direction: column;  /* Stack content vertically */
+        padding-top: 20px;  /* Reduce padding */
+    }
+
+    /* Logo adjustments */
+    .img-fluid {
+        max-width: 80%;  /* Make the logo smaller */
+        padding-left: 0;  /* Remove left padding */
+    }
+
+    /* Icon container adjustments */
+    header .d-flex {
+        justify-content: center;  /* Center icons */
+        padding-right: 0;  /* Remove padding */
+    }
+
+    /* Carousel adjustments */
+    .carousel-inner img {
+        max-width: 100%;  /* Ensure carousel images fit the screen */
         height: auto;
     }
 
-    .photo-caption {
-        font-size: 12px; /* Adjust caption font size */
-        height: auto; /* Let caption adjust dynamically */
-        padding: 8px;
+    /* Footer */
+    .footer {
+        font-size: 14px;  /* Adjust font size for footer */
     }
 
-    .photo-title {
-        font-size: 18px;
-        padding: 8px;
+    /* Photo Gallery */
+    .photo-gallery {
+        flex-direction: column;  /* Stack gallery items vertically */
+        width: 100%;  /* Make the gallery full width */
+        margin: 0 auto;
+    }
+
+    .photo-item {
+        width: 100%;  /* Make photo items full width */
+        margin-bottom: 15px;  /* Add spacing between photo items */
     }
 
     .more-button {
-        font-size: 12px;
-        padding: 6px 12px;
-        position: static; /* Ensure button stays inside the caption on mobile */
-        margin-top: 5px;
-        display: inline-block;
+        left: 50%;  /* Center the button */
+        transform: translateX(-50%);  /* Adjust button positioning */
     }
-    
+
+    /* Arrow button */
+    .arrow-button {
+        right: 20px;
+        bottom: 20px;
+        display: block;  /* Make the arrow button visible on mobile */
+    }
+
+    /* Form inputs (Search bar) */
+    .form-control {
+        width: 100%;  /* Make the search bar take up full width */
+    }
+
+    .btn-outline-success {
+        width: 100%;  /* Make the search button full width */
+        margin-top: 10px;  /* Add margin to the top */
+    }
 }
+
+
+
 #portfolio_animal_prices{
     padding-left: 150px;
     padding-top: 20px;
@@ -541,6 +615,10 @@ header .d-flex a {
 .background_fix{
     background-color:var(--boja) ;
 }
+
+
+
+
 
 
 
