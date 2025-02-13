@@ -411,102 +411,7 @@ header .d-flex a {
 
 
 
-  /* Mobile-first responsive design */
-@media (max-width: 768px) {
-    /* Adjust the body background image */
-    body {
-        background-size: cover;
-    }
 
-    /* Navbar */
-    .navbar {
-        width: 100%;  /* Make the navbar full width */
-        border-radius: 0;  /* Remove rounded corners */
-    }
-
-    .navbar-nav {
-        flex-direction: column;  /* Stack navbar items vertically */
-        text-align: center;  /* Center-align items */
-    }
-
-    /* Navbar item adjustments */
-    .navbar-nav .nav-link, 
-    .navbar-nav .btn, 
-    .dropdown-toggle {
-        font-size: 14px;  /* Reduce font size for smaller screens */
-        margin: 5px 0;  /* Decrease margin */
-    }
-
-    /* Navbar toggler icon adjustments */
-    .navbar-toggler {
-        background-color: var(--text-white); 
-        border: none;
-        font-size: 20px;  /* Increase the size of the toggler icon */
-    }
-
-    /* Hero Section */
-    header {
-        flex-direction: column;  /* Stack content vertically */
-        padding-top: 20px;  /* Reduce padding */
-    }
-
-    /* Logo adjustments */
-    .img-fluid {
-        max-width: 80%;  /* Make the logo smaller */
-        padding-left: 0;  /* Remove left padding */
-    }
-
-    /* Icon container adjustments */
-    header .d-flex {
-        justify-content: center;  /* Center icons */
-        padding-right: 0;  /* Remove padding */
-    }
-
-    /* Carousel adjustments */
-    .carousel-inner img {
-        max-width: 100%;  /* Ensure carousel images fit the screen */
-        height: auto;
-    }
-
-    /* Footer */
-    .footer {
-        font-size: 14px;  /* Adjust font size for footer */
-    }
-
-    /* Photo Gallery */
-    .photo-gallery {
-        flex-direction: column;  /* Stack gallery items vertically */
-        width: 100%;  /* Make the gallery full width */
-        margin: 0 auto;
-    }
-
-    .photo-item {
-        width: 100%;  /* Make photo items full width */
-        margin-bottom: 15px;  /* Add spacing between photo items */
-    }
-
-    .more-button {
-        left: 50%;  /* Center the button */
-        transform: translateX(-50%);  /* Adjust button positioning */
-    }
-
-    /* Arrow button */
-    .arrow-button {
-        right: 20px;
-        bottom: 20px;
-        display: block;  /* Make the arrow button visible on mobile */
-    }
-
-    /* Form inputs (Search bar) */
-    .form-control {
-        width: 100%;  /* Make the search bar take up full width */
-    }
-
-    .btn-outline-success {
-        width: 100%;  /* Make the search button full width */
-        margin-top: 10px;  /* Add margin to the top */
-    }
-}
 
 
 
@@ -619,6 +524,257 @@ header .d-flex a {
 }
 
 
+  /* Mobile-first responsive design */
+  @media (max-width: 768px) {
+    /* Adjust the body background image */
+    body {
+        background-size: cover;
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 100%;  /* Make the navbar full width */
+        border-radius: 0;  /* Remove rounded corners */
+    }
+
+    .navbar-nav {
+        flex-direction: column;  /* Stack navbar items vertically */
+        text-align: center;  /* Center-align items */
+    }
+
+    /* Navbar item adjustments */
+    .navbar-nav .nav-link, 
+    .navbar-nav .btn, 
+    .dropdown-toggle {
+        font-size: 14px;  /* Reduce font size for smaller screens */
+        margin: 5px 0;  /* Decrease margin */
+    }
+
+    /* Navbar toggler icon adjustments */
+    .navbar-toggler {
+        background-color: var(--text-white); 
+        border: none;
+        font-size: 20px;  /* Increase the size of the toggler icon */
+    }
+
+    /* Hero Section */
+    header {
+        flex-direction: column;  /* Stack content vertically */
+        padding-top: 20px;  /* Reduce padding */
+    }
+
+    /* Logo adjustments */
+    .img-fluid {
+        max-width: 80%;  /* Make the logo smaller */
+        padding-left: 0;  /* Remove left padding */
+    }
+
+    /* Icon container adjustments */
+    header .d-flex {
+        justify-content: center;  /* Center icons */
+        padding-right: 0;  /* Remove padding */
+    }
+
+    /* Carousel adjustments */
+    .carousel-inner img {
+        max-width: 100%;  /* Ensure carousel images fit the screen */
+        height: auto;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 14px;  /* Adjust font size for footer */
+    }
+
+    /* Photo Gallery */
+    .photo-gallery {
+        flex-direction: column;  /* Stack gallery items vertically */
+        width: 100%;  /* Make the gallery full width */
+        margin: 0 auto;
+    }
+
+    .photo-item {
+        width: 100%;  /* Make photo items full width */
+        margin-bottom: 15px;  /* Add spacing between photo items */
+    }
+
+    .more-button {
+        left: 50%;  /* Center the button */
+        transform: translateX(-50%);  /* Adjust button positioning */
+    }
+
+    /* Arrow button */
+    .arrow-button {
+        right: 20px;
+        bottom: 20px;
+        display: block;  /* Make the arrow button visible on mobile */
+    }
+
+    /* Form inputs (Search bar) */
+    .form-control {
+        width: 100%;  /* Make the search bar take up full width */
+    }
+
+    .btn-outline-success {
+        width: 100%;  /* Make the search button full width */
+        margin-top: 10px;  /* Add margin to the top */
+    }
+}
+
+
+/* Tablet-specific responsive design */
+@media (max-width: 1024px) {
+    /* Adjust the body background image */
+    body {
+        background-size: cover;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link, 
+    .navbar-nav .btn, 
+    .dropdown-toggle {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    /* Navbar toggler icon adjustments */
+    .navbar-toggler {
+        background-color: var(--text-white);
+        border: none;
+        font-size: 24px;
+    }
+
+    /* Hero Section */
+    header {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .img-fluid {
+        max-width: 70%;
+        padding-left: 0;
+    }
+
+    header .d-flex {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    /* Carousel adjustments */
+    .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 16px;
+    }
+
+    /* Photo Gallery */
+    .photo-gallery {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .photo-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .more-button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .arrow-button {
+        right: 30px;
+        bottom: 30px;
+        display: block;
+    }
+
+    /* Form inputs (Search bar) */
+    .form-control {
+        width: 100%;
+    }
+
+    .btn-outline-success {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+@media(width: 1680px){
+    .navbar {
+        max-width: 72%;
+        width: 72%; /* Adjust navbar width for larger screens */
+    }
+
+    .img-fluid {
+        padding-left: 225px; /* Adjust logo padding for larger screens */
+    }
+
+    header .d-flex {
+        padding-right: 220px; /* Adjust icon padding for larger screens */
+    }
+
+    .photo-gallery {
+        justify-content: center;
+        gap: 30px; /* More spacing for gallery items */
+    }
+
+    .photo-item {
+        width: 18%; /* Slightly larger gallery items */
+    }
+
+    .carousel-caption label {
+        font-size: 60px; /* Larger carousel captions */
+    }
+}
+
+@media(width: 1714px){
+    .navbar {
+        max-width: 71%;
+        width: 71%; /* Adjust navbar width for larger screens */
+    }
+
+    .img-fluid {
+        padding-left: 340px; /* Adjust logo padding for larger screens */
+    }
+
+    header .d-flex {
+        padding-right: 340px; /* Adjust icon padding for larger screens */
+    }
+
+    .photo-gallery {
+        justify-content: center;
+        gap: 30px; /* More spacing for gallery items */
+    }
+
+    .photo-item {
+        width: 18%; /* Slightly larger gallery items */
+    }
+
+    .carousel-caption label {
+        font-size: 60px; /* Larger carousel captions */
+    }
+}
+
+
 
 /* For Full HD (1920x1080) or larger screens */
 @media (width: 1920px) {
@@ -650,61 +806,10 @@ header .d-flex a {
 }
 
 
-@media(width: 1714px){
-    .navbar {
-        max-width: 71%;
-        width: 71%; /* Adjust navbar width for larger screens */
-    }
 
-    .img-fluid {
-        padding-left: 340px; /* Adjust logo padding for larger screens */
-    }
 
-    header .d-flex {
-        padding-right: 340px; /* Adjust icon padding for larger screens */
-    }
 
-    .photo-gallery {
-        justify-content: center;
-        gap: 30px; /* More spacing for gallery items */
-    }
 
-    .photo-item {
-        width: 18%; /* Slightly larger gallery items */
-    }
-
-    .carousel-caption label {
-        font-size: 60px; /* Larger carousel captions */
-    }
-}
-
-@media(width: 1680px){
-    .navbar {
-        max-width: 72%;
-        width: 72%; /* Adjust navbar width for larger screens */
-    }
-
-    .img-fluid {
-        padding-left: 225px; /* Adjust logo padding for larger screens */
-    }
-
-    header .d-flex {
-        padding-right: 220px; /* Adjust icon padding for larger screens */
-    }
-
-    .photo-gallery {
-        justify-content: center;
-        gap: 30px; /* More spacing for gallery items */
-    }
-
-    .photo-item {
-        width: 18%; /* Slightly larger gallery items */
-    }
-
-    .carousel-caption label {
-        font-size: 60px; /* Larger carousel captions */
-    }
-}
 
 
 

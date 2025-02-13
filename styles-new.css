@@ -41,7 +41,7 @@ body {
 }
 
 .navbar {
-    background-color: var(--navbar-color);
+    background-color: var(--navbar-color) !important;
 }
 
 .navbar-nav .nav-link, .navbar-nav .btn , .dropdown-toggle {
@@ -49,57 +49,57 @@ body {
 }
 
 #aboutUsButtonDropdown{
-    color: var(--navbar-bojabukve);
+    color: var( --navbar-text) !important;
 }
 #aboutUsButtonDropdown:hover{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 #aboutUsButtonDropdown:focus{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 
 #smallGameDropdown{
-    color: var(--navbar-bojabukve);
+    color: var( --navbar-text) !important;
 }
 #smallGameDropdown:hover{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 #smallGameDropdown:focus{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 #bigGameDropdown{
-    color: var(--navbar-bojabukve);
+    color: var( --navbar-text) !important;
 }
 #bigGameDropdown:hover{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 #bigGameDropdown:focus{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 #galleryDropdown{
-    color: var(--navbar-bojabukve);
+    color: var(--navbar-text) !important;
 }
 #galleryDropdown:hover{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 #galleryDropdown:focus{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 #navbarDropdownItems{
-    color: var(--navbar-text);
+    color: var(--navbar-text) !important;
 }
 #navbarDropdownItems:hover{
-    color: var(--button-hover);
+    color: var(--button-hover) !important;
 }
 
 /* Hover effects */
 .navbar-nav .nav-link:hover, .navbar-nav .btn:hover{
-    color: var(--button-hover);  /* On hover, change the color to golden yellow */
+    color: var(--button-hover) !important;  /* On hover, change the color to golden yellow */
 }
 
 /* Navbar toggler styles */
 .navbar-toggler {
-    background-color: var(--text-white); /* Maintain the white color for toggler icon */
+    background-color: var(--text-white) !important; /* Maintain the white color for toggler icon */
     border: none;
 }
 
@@ -345,4 +345,8 @@ body {
 .navbar-toggler {
     background-color: var(--navbar-text)!important;
     border: none;
+}
+
+.text-gold{
+    color: var(--button-hover);
 }
