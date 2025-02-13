@@ -1,0 +1,348 @@
+:root {
+
+    --dark-green: #2c3e30;
+    --text-white: #ffffff;
+    --navbar-color:#565c46;
+    --navbar-text:#eae7c7;
+
+
+    --masilnasta-navbar: #4c513e;
+    --footer-boja: #272b27;
+    --our-packages: #cdcbb1;
+    --button-hover:#e6b069;
+    --button:#61664e;
+
+    --boja:#353931;
+
+
+    --medium-green: #3c523b;
+    --light-green: #4b6947;
+    --golden-yellow: #d4a35b;
+
+
+
+
+    --navbar-boja:#565c46;
+
+
+}
+
+/* Body styles */
+body {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300;
+    color: var(--text-white);
+    margin: 0;
+    padding: 0;
+    background-image:url(./v2images/background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+}
+
+.navbar-nav .nav-link, .navbar-nav .btn , .dropdown-toggle {
+    color: var(--navbar-text) !important;
+}
+
+#aboutUsButtonDropdown{
+    color: var(--navbar-bojabukve);
+}
+#aboutUsButtonDropdown:hover{
+    color: var(--button-hover);
+}
+#aboutUsButtonDropdown:focus{
+    color: var(--button-hover);
+}
+
+#smallGameDropdown{
+    color: var(--navbar-bojabukve);
+}
+#smallGameDropdown:hover{
+    color: var(--button-hover);
+}
+#smallGameDropdown:focus{
+    color: var(--button-hover);
+}
+#bigGameDropdown{
+    color: var(--navbar-bojabukve);
+}
+#bigGameDropdown:hover{
+    color: var(--button-hover);
+}
+#bigGameDropdown:focus{
+    color: var(--button-hover);
+}
+#galleryDropdown{
+    color: var(--navbar-bojabukve);
+}
+#galleryDropdown:hover{
+    color: var(--button-hover);
+}
+#galleryDropdown:focus{
+    color: var(--button-hover);
+}
+#navbarDropdownItems{
+    color: var(--navbar-text);
+}
+#navbarDropdownItems:hover{
+    color: var(--button-hover);
+}
+
+/* Hover effects */
+.navbar-nav .nav-link:hover, .navbar-nav .btn:hover{
+    color: var(--button-hover);  /* On hover, change the color to golden yellow */
+}
+
+/* Navbar toggler styles */
+.navbar-toggler {
+    background-color: var(--text-white); /* Maintain the white color for toggler icon */
+    border: none;
+}
+
+/* Navbar center alignment */
+.navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+
+/* Style for dropdown buttons */
+.navbar-nav .dropdown-toggle {
+    background: none;  /* Remove default button styles */
+    border: none;
+    padding: 0;
+    font-size: 16px;  /* Adjust size for consistency */
+    color: var(--text-white);  /* Set dropdown button text color to white */
+}
+
+
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #3c523b;
+    border: none;
+}
+
+.dropdown-item {
+    color: var(--text-white);  /* Set dropdown item text color to white */
+}
+
+.dropdown-item:hover {
+    /*background-color: var(--dark-green);*/
+    background-color: var(--boja);
+    color: var(--button-hover);  /* Change the text color to golden yellow on hover */
+}
+
+/* Ensuring dropdown-toggle button stays golden-yellow when clicked */
+.navbar-nav .dropdown-toggle:focus {
+    color: var(--button-hover);  /* Change color to golden-yellow when the button is focused */
+    box-shadow: none; /* Remove the focus outline */
+}
+
+/* Add active state for dropdown item when clicked */
+.navbar-nav .dropdown-item.active {
+    background-color: var(--dark-green); /* Maintain background when item is active */
+    color: var(--button-hover);  /* Ensure the active item is golden yellow */
+}
+
+/* Dropdown open styles (to keep the dropdown button golden-yellow when active) */
+.navbar-nav .dropdown-menu.show {
+    background-color: var(--navbar-boja);  /* Ensure dropdown stays in the right color */
+}
+
+
+/* Form input (Search bar) */
+.form-control {
+    background-color: var(--boja);  /* Set the background color to dark green */
+    color: #fff;  /* Set the text color to white for contrast */
+    border: 1px solid var(--text-white);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background-color: var(--boja); /* Maintain dark green on focus */
+    color: #fff; /* Keep white text */
+    border: 1px solid var(--button-hover); /* Keep the golden-yellow border on focus */
+    box-shadow: none; /* Remove default blue shadow */
+}
+
+/* Search button */
+.btn-outline-success {
+    background-color: var(--boja);
+    border: 1px solid var(--text-white);
+    color: #fff;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--button-hover);
+    color: #fff;
+    border: 1px solid var(--button-hover);
+}
+/* Styling for search icon */
+.bi-search {
+    font-size: 18px;
+}
+
+.dropdown-item:hover {
+    /*background-color: var(--dark-green);*/
+    background-color: var(--boja);
+    color: var(--button-hover);  /* Change the text color to golden yellow on hover */
+}
+
+/* Ensuring dropdown-toggle button stays golden-yellow when clicked */
+.navbar-nav .dropdown-toggle:focus {
+    color: var(--button-hover);  /* Change color to golden-yellow when the button is focused */
+    box-shadow: none; /* Remove the focus outline */
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /*shadow for better readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for contrast */
+    color: var(--button-hover);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hide the text */
+    animation: fadeIn 1.5s ease-out 0.5s forwards; /* Animation with delay */
+}
+/* fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+.carousel-caption label{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.photo-gallery {
+    background-color: var(--navbar-boja);
+}
+
+.footer {
+    background-color: var(--footer-boja);
+    color: var(--text-white);
+}
+
+.footer a {
+    color: var(--button-hover);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.photo-gallery-card {
+    background-color: var(--footer-boja) !important;
+    border: none !important;
+}
+
+.card {
+    border: none !important;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+#our_packages_v2Rebuild{
+    max-width: 1220px;
+    /* background-color: rgba(0, 0, 0, 0.6); STARA BOJA */
+    background-color: var(--footer-boja);
+    padding: 15px; /* Added padding to space content inside */
+    text-align: center; /* Centers the content */
+    margin: 0 auto; /* Centering the entire section */
+}
+/* Title */
+#our_packages_v2Rebuild h3 {
+    background-color: var(--our-packages);
+    color: black;
+    font-weight: bold;
+    padding: 10px 0; /* Proper padding instead of fixed width */
+    margin-bottom: 15px;
+    display: block; /* Full width but still within container */
+    width: 100%;
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Carousel image styling */
+#our_packages_v2Rebuild .carousel-inner img {
+    height: 150px;
+    object-fit: scale-down;
+    width: auto;
+    max-width: 180%;
+    border: 5px solid white;
+}
+#our_packages_v2Rebuild .carousel-inner img:hover{
+    border: 5px solid var(--button-hover);
+    cursor: pointer;
+}
+.clickable-image {
+    cursor: pointer;
+}
+
+.background_fix{
+    background-color:var(--boja) ;
+}
+
+.arrow-button{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-hover);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+
+.arrow-button:hover {
+    color: black;
+}
+.bi-facebook, .bi-instagram, .bi-google {
+    color: var(--navbar-text);
+    text-shadow: 2px 2px 5px rgba(50, 30, 10, 0.8);
+    transition: color 0.3s ease;
+}
+
+/* Fix hover effect */
+.bi-facebook:hover,
+.bi-instagram:hover,
+.bi-google:hover {
+    color: var(--button-hover);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.more-button {
+    background-color: var(--dark-green);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color:var(--button-hover)
+}
+
+.navbar-toggler {
+    background-color: var(--navbar-text)!important;
+    border: none;
+}
