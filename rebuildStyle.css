@@ -621,7 +621,7 @@ header .d-flex a {
 
 
 /* For Full HD (1920x1080) or larger screens */
-@media (min-width: 1920px) {
+@media (width: 1920px) {
     .navbar {
         max-width: 63%;
         width: 64%; /* Adjust navbar width for larger screens */
@@ -649,7 +649,8 @@ header .d-flex a {
     }
 }
 
-@media(min-width: 1714px){
+
+@media(width: 1714px){
     .navbar {
         max-width: 71%;
         width: 71%; /* Adjust navbar width for larger screens */
@@ -677,7 +678,7 @@ header .d-flex a {
     }
 }
 
-@media(min-width: 1680px){
+@media(width: 1680px){
     .navbar {
         max-width: 72%;
         width: 72%; /* Adjust navbar width for larger screens */
@@ -704,6 +705,8 @@ header .d-flex a {
         font-size: 60px; /* Larger carousel captions */
     }
 }
+
+
 
 
 
