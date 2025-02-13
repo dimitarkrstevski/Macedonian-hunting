@@ -511,6 +511,9 @@ header .d-flex a {
 
 
 
+
+
+
 #portfolio_animal_prices{
     padding-left: 150px;
     padding-top: 20px;
@@ -615,6 +618,64 @@ header .d-flex a {
 .background_fix{
     background-color:var(--boja) ;
 }
+
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
+    .navbar {
+        width: 70%; /* Adjust navbar width for larger screens */
+    }
+
+    .img-fluid {
+        padding-left: 200px; /* Adjust logo padding for larger screens */
+    }
+
+    header .d-flex {
+        padding-right: 200px; /* Adjust icon padding for larger screens */
+    }
+
+    .photo-gallery {
+        justify-content: center;
+        gap: 20px; /* Add more spacing for larger screens */
+    }
+
+    .photo-item {
+        width: 20%; /* Increase gallery item size */
+    }
+
+    .carousel-caption label {
+        font-size: 50px; /* Make carousel captions larger */
+    }
+}
+
+/* For Full HD (1920x1080) or larger screens */
+@media (min-width: 1920px) {
+    .navbar {
+        width: 60%; /* Adjust navbar width for larger screens */
+    }
+
+    .img-fluid {
+        padding-left: 250px; /* Adjust logo padding for larger screens */
+    }
+
+    header .d-flex {
+        padding-right: 250px; /* Adjust icon padding for larger screens */
+    }
+
+    .photo-gallery {
+        justify-content: center;
+        gap: 30px; /* More spacing for gallery items */
+    }
+
+    .photo-item {
+        width: 18%; /* Slightly larger gallery items */
+    }
+
+    .carousel-caption label {
+        font-size: 60px; /* Larger carousel captions */
+    }
+}
+
 
 
 
