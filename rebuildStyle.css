@@ -623,8 +623,8 @@ header .d-flex a {
 /* For Full HD (1920x1080) or larger screens */
 @media (width: 1920px) {
     .navbar {
-        max-width: 63%;
-        width: 64%; /* Adjust navbar width for larger screens */
+        max-width: 65%;
+        width: 65%; /* Adjust navbar width for larger screens */
     }
 
     .img-fluid {
