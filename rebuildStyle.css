@@ -623,7 +623,36 @@ header .d-flex a {
 /* For Full HD (1920x1080) or larger screens */
 @media (min-width: 1920px) {
     .navbar {
+        max-width: 63%;
         width: 64%; /* Adjust navbar width for larger screens */
+    }
+
+    .img-fluid {
+        padding-left: 340px; /* Adjust logo padding for larger screens */
+    }
+
+    header .d-flex {
+        padding-right: 340px; /* Adjust icon padding for larger screens */
+    }
+
+    .photo-gallery {
+        justify-content: center;
+        gap: 30px; /* More spacing for gallery items */
+    }
+
+    .photo-item {
+        width: 18%; /* Slightly larger gallery items */
+    }
+
+    .carousel-caption label {
+        font-size: 60px; /* Larger carousel captions */
+    }
+}
+
+@media(min-width: 1714px){
+    .navbar {
+        max-width: 71%;
+        width: 71%; /* Adjust navbar width for larger screens */
     }
 
     .img-fluid {
