@@ -677,6 +677,35 @@ header .d-flex a {
     }
 }
 
+@media(min-width: 1680px){
+    .navbar {
+        max-width: 72%;
+        width: 72%; /* Adjust navbar width for larger screens */
+    }
+
+    .img-fluid {
+        padding-left: 225px; /* Adjust logo padding for larger screens */
+    }
+
+    header .d-flex {
+        padding-right: 220px; /* Adjust icon padding for larger screens */
+    }
+
+    .photo-gallery {
+        justify-content: center;
+        gap: 30px; /* More spacing for gallery items */
+    }
+
+    .photo-item {
+        width: 18%; /* Slightly larger gallery items */
+    }
+
+    .carousel-caption label {
+        font-size: 60px; /* Larger carousel captions */
+    }
+}
+
+
 
 
 
