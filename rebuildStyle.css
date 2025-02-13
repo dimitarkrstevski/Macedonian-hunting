@@ -193,7 +193,6 @@ header {
     display: flex;
     justify-content: space-between; /* Push content to both sides */
     align-items: center; /* Center vertically */
-    
     padding: 10px; /* Add some padding to avoid touching the edges */
     padding-top: 50px;
 }
@@ -624,15 +623,15 @@ header .d-flex a {
 /* For Full HD (1920x1080) or larger screens */
 @media (min-width: 1920px) {
     .navbar {
-        width: 60%; /* Adjust navbar width for larger screens */
+        width: 64%; /* Adjust navbar width for larger screens */
     }
 
     .img-fluid {
-        padding-left: 250px; /* Adjust logo padding for larger screens */
+        padding-left: 340px; /* Adjust logo padding for larger screens */
     }
 
     header .d-flex {
-        padding-right: 250px; /* Adjust icon padding for larger screens */
+        padding-right: 340px; /* Adjust icon padding for larger screens */
     }
 
     .photo-gallery {
