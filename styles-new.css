@@ -3,7 +3,7 @@
     --dark-green: #2c3e30;
     --text-white: #ffffff;
     --navbar-color:#565c46;
-    --navbar-text:#eae7c7;
+    --navbar-text: #efede9;
 
 
     --masilnasta-navbar: #4c513e;
@@ -23,6 +23,7 @@
 
 
     --navbar-boja:#565c46;
+
 
 
 }
@@ -109,6 +110,39 @@ body {
     justify-content: center;
 }
 
+.content-color {
+    background-color: var(--boja) ;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: var(--navbar-color) !important;
+    border-top-right-radius: var(--navbar-color) !important;
+
+}
+
+.accordion-body {
+    background-color: white !important;
+    color: black !important;
+}
+
+.accordion-button {
+    background: var(--navbar-color) !important;
+    color: var(--navbar-text) !important;
+    border-color: var(--navbar-color) !important;
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    color: white !important;
+}
+
 /* Style for dropdown buttons */
 .navbar-nav .dropdown-toggle {
     background: none;  /* Remove default button styles */
@@ -118,9 +152,19 @@ body {
     color: var(--text-white);  /* Set dropdown button text color to white */
 }
 
+.submit-btn {
+    background-color: white !important;
+    color: black !important;
 
+}
 
-/* Dropdown menu styling */
+.submit-btn:hover {
+    background-color: var(--button-hover) !important;
+    color: black !important;
+
+}
+
+    /* Dropdown menu styling */
 .dropdown-menu {
     background-color: #3c523b;
     border: none;
@@ -349,4 +393,9 @@ body {
 
 .text-gold{
     color: var(--button-hover);
+}
+
+
+.card-header:first-child {
+    border-radius: 0 !important;
 }
