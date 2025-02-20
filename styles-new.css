@@ -399,3 +399,14 @@ body {
 .card-header:first-child {
     border-radius: 0 !important;
 }
+
+.appointment-btn {
+    background-color: var(--navbar-boja);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color:var(--button-hover)
+}
