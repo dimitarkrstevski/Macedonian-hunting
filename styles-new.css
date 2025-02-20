@@ -3,7 +3,9 @@
     --dark-green: #2c3e30;
     --text-white: #ffffff;
     --navbar-color:#565c46;
-    --navbar-text: #efede9;
+    
+    /* --navbar-text: #efede9; MNOGU E BELA */
+    --navbar-text: #eae7c7;
 
 
     --masilnasta-navbar: #4c513e;
@@ -409,4 +411,8 @@ body {
 
 .appointment-btn:hover {
     background-color:var(--button-hover)
+}
+
+.border-gold{
+    border-color: var(--button-hover) !important; 
 }

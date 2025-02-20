@@ -42,7 +42,7 @@
 </header>
     
   <!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg px-5 rounded" >
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,17 +50,18 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav d-flex align-items-center">
           <li class="nav-item d-flex align-items-center">
-            <a class="btn btn-link nav-link" href="./v2Rebuild.html" type="button">
+            <a class="btn btn-link nav-link" href="old/index.html" type="button">
               <i class="bi bi-house-fill fs-2"></i>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle" type="button" id="aboutUsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutUsButtonDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               ABOUT US
-            </button>
+            </a>
             <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-              <li><button class="dropdown-item" type="button">CLIENT FEEDBACK</button></li>
-              <li><button class="dropdown-item" type="button">FAQS</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">CLIENT FEEDBACK</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">FAQS</button></li>
+              <li><a href="./about.html" class="dropdown-item" type="button" id="navbarDropdownItems">ABOUT US</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -68,14 +69,14 @@
               SMALL GAME
             </button>
             <ul class="dropdown-menu" aria-labelledby="smallGameDropdown">
-              <li><button class="dropdown-item" type="button">QUAILS</button></li>
-              <li><button class="dropdown-item" type="button">TURTLEDOVES</button></li>
-              <li><button class="dropdown-item" type="button">WOOD PIGEONS</button></li>
-              <li><button class="dropdown-item" type="button">DUCKS</button></li>
-              <li><button class="dropdown-item" type="button">WOODCOCK</button></li>
-              <li><button class="dropdown-item" type="button">GREY PARTRIDGE</button></li>
-              <li><button class="dropdown-item" type="button">ROCK PARTRIDGE</button></li>
-              <li><button class="dropdown-item" type="button">PHEASANTS</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">QUAILS</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">TURTLEDOVES</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">WOOD PIGEONS</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">DUCKS</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">WOODCOCK</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">GREY PARTRIDGE</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">ROCK PARTRIDGE</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">PHEASANTS</button></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -83,15 +84,16 @@
               BIG GAME
             </button>
             <ul class="dropdown-menu" aria-labelledby="bigGameDropdown">
-              <li><button class="dropdown-item" type="button">ROE DEER</button></li> 
-              <li><button class="dropdown-item" type="button">FALLOW DEER</button></li>
-              <li><button class="dropdown-item" type="button">RED DEER</button></li>
-              <li><button class="dropdown-item" type="button">KRI KRI</button></li>
-              <li><a class="dropdown-item" href="./portfolioRebuild.html" type="button">WILD BOAR</a></li>
-              <li><button class="dropdown-item" type="button">MOUFLON</button></li>
-              <li><button class="dropdown-item" type="button">WILD GOAT</button></li>
-              <li><button class="dropdown-item" type="button">WOLF</button></li>
-              <li><a class="dropdown-item" href="./v2portfolioRebuild.html" type="button">WILD BOAR 2 VERSION</a></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">ROE DEER</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">FALLOW DEER</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">RED DEER</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">KRI KRI</button></li>
+              <li><a class="dropdown-item" href="./portfolioRebuild.html" type="button" id="navbarDropdownItems">WILD BOAR</a></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">MOUFLON</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">WILD GOAT</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">WOLF</button></li>
+              <li><a class="dropdown-item" href="./v2portfolioRebuild.html" type="button" id="navbarDropdownItems">WILD BOAR 2 VERSION</a></li>
+              <li><a class="dropdown-item" href="./v3portfolioRebuild.html" type="button" id="navbarDropdownItems">WILD BOAR 3 VERSION</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -99,8 +101,8 @@
               GALLERY
             </button>
             <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
-              <li><button class="dropdown-item" type="button">SMALL GAME HUNTING GALLERY</button></li>
-              <li><button class="dropdown-item" type="button">BIG GAME HUNTING GALLERY</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">SMALL GAME HUNTING GALLERY</button></li>
+              <li><button class="dropdown-item" type="button" id="navbarDropdownItems">BIG GAME HUNTING GALLERY</button></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -109,7 +111,7 @@
         </ul>
         <form class="d-flex ms-auto" role="search">
           <div class="input-group">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control" type="search"  aria-label="Search">
             <button class="btn btn-outline-success" type="submit">
               <i class="bi bi-search"></i>
             </button>
@@ -117,7 +119,8 @@
         </form>
       </div>
     </div>
-</nav>
+  </nav>
+
   
   <main class="container mt-4">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
