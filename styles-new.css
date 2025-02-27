@@ -273,6 +273,8 @@ body {
 
 .photo-gallery {
     background-color: var(--navbar-boja);
+    max-width: 1076px; /* DODADENO ZA DA BIDE U ISTA LINIJA SO NAVBAR I SLIKA */
+
 }
 
 .footer {
@@ -304,7 +306,8 @@ body {
 }
 
 #our_packages_v2Rebuild{
-    max-width: 1220px;
+    max-width: 1076px; /* DODADENO ZA DA SE NAMALI SIRINA, DA BIDE U ISTA GRANICA SO SLIKETE GORE */
+    /* max-width: 1220px; */ /* SO OVA E POSIROKO, VAKA BESE */
     /* background-color: rgba(0, 0, 0, 0.6); STARA BOJA */
     background-color: var(--footer-boja);
     padding: 15px; /* Added padding to space content inside */
