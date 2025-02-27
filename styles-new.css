@@ -15,6 +15,7 @@
     --button:#61664e;
 
     --boja:#353931;
+    --boja_our_packages_old_site: #181818;
 
 
     --medium-green: #3c523b;
@@ -25,6 +26,7 @@
 
 
     --navbar-boja:#565c46;
+    --boja-prvi-slike:#ffaf45;
 
 
 
@@ -44,7 +46,7 @@ body {
 }
 
 .navbar {
-    background-color: var(--boja) !important;
+    background-color: var(--footer-boja) !important;
 }
 
 .navbar-nav .nav-link, .navbar-nav .btn , .dropdown-toggle {
@@ -52,7 +54,7 @@ body {
 }
 
 #aboutUsButtonDropdown{
-    color: var( --navbar-text) !important;
+    color: var( --navbar-text)!important;
 }
 #aboutUsButtonDropdown:hover{
     color: var(--button-hover) !important;
@@ -90,6 +92,7 @@ body {
 }
 #navbarDropdownItems{
     color: var(--navbar-text) !important;
+    text-align: center;
 }
 #navbarDropdownItems:hover{
     color: var(--button-hover) !important;
@@ -113,7 +116,9 @@ body {
 }
 
 .content-color {
-    background-color: var(--boja) ;
+    background-color: var(--footer-boja);
+    max-width: 1075px;
+    padding-top: 10px;
 }
 
 .accordion-item:first-of-type .accordion-button {
@@ -168,8 +173,9 @@ body {
 
     /* Dropdown menu styling */
 .dropdown-menu {
-    background-color: #3c523b;
+    background-color: #3c523b; 
     border: none;
+
 }
 
 .dropdown-item {
@@ -196,7 +202,7 @@ body {
 
 /* Dropdown open styles (to keep the dropdown button golden-yellow when active) */
 .navbar-nav .dropdown-menu.show {
-    background-color: var(--navbar-boja);  /* Ensure dropdown stays in the right color */
+    background-color: #6a6f5d;  /* Ensure dropdown stays in the right color */
 }
 
 
@@ -267,7 +273,7 @@ body {
     }
 }
 .carousel-caption label{
-    font-size: 40px;
+    font-size: 38px;
     font-weight: bold;
 }
 
@@ -332,16 +338,25 @@ body {
     text-align: center; /* Ensure text is centered */
 }
 
+#our_packages_v2RebuildNew{
+    color: var(--boja_our_packages_old_site);
+    border: 5px solid var(--our-packages);
+    margin-top: 10px;
+    background-color: var(--our-packages);
+    height: 60px;
+    padding-top: 10px;
+}
+
 /* Carousel image styling */
 #our_packages_v2Rebuild .carousel-inner img {
-    height: 150px;
+    height: 120px;
     object-fit: scale-down;
     width: auto;
     max-width: 180%;
-    border: 5px solid white;
+    border: 4px solid var(--our-packages);
 }
 #our_packages_v2Rebuild .carousel-inner img:hover{
-    border: 5px solid var(--button-hover);
+    border: 5px solid #ffaf45;
     cursor: pointer;
 }
 .clickable-image {
@@ -389,14 +404,14 @@ body {
 }
 
 .more-button {
-    background-color: var(--dark-green);
+    background-color: #6a6f5d;
     color: #fff;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .more-button:hover {
-    background-color:var(--button-hover)
+    background-color:var(--boja-prvi-slike)
 }
 
 .navbar-toggler {
@@ -405,7 +420,7 @@ body {
 }
 
 .text-gold{
-    color: var(--button-hover);
+    color: var(--boja-prvi-slike);
 }
 
 
@@ -426,4 +441,17 @@ body {
 
 .border-gold{
     border-color: var(--button-hover) !important; 
+}
+
+.text-gold-start{
+    color: var(--boja-prvi-slike);
+}
+
+.text-white-start{
+color: white;
+font-weight: bold;
+}
+
+.text-light{
+    background-color:var(--footer-boja);
 }
