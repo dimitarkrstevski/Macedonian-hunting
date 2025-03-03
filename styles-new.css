@@ -279,7 +279,7 @@ body {
 
 .photo-gallery {
     background-color: var(--navbar-boja);
-    max-width: 1076px; /* DODADENO ZA DA BIDE U ISTA LINIJA SO NAVBAR I SLIKA */
+    /*max-width: 1076px; !* DODADENO ZA DA BIDE U ISTA LINIJA SO NAVBAR I SLIKA *!*/
 
 }
 
@@ -311,14 +311,14 @@ body {
     border-top-right-radius: 0 !important;
 }
 
-#our_packages_v2Rebuild{
-    max-width: 1076px; /* DODADENO ZA DA SE NAMALI SIRINA, DA BIDE U ISTA GRANICA SO SLIKETE GORE */
+.our_packages_v2Rebuild{
+    /*max-width: 1076px; !* DODADENO ZA DA SE NAMALI SIRINA, DA BIDE U ISTA GRANICA SO SLIKETE GORE *!*/
     /* max-width: 1220px; */ /* SO OVA E POSIROKO, VAKA BESE */
     /* background-color: rgba(0, 0, 0, 0.6); STARA BOJA */
     background-color: var(--footer-boja);
-    padding: 15px; /* Added padding to space content inside */
-    text-align: center; /* Centers the content */
-    margin: 0 auto; /* Centering the entire section */
+    /*padding: 15px; !* Added padding to space content inside *!*/
+    /*text-align: center; !* Centers the content *!*/
+    /*margin: 0 auto; !* Centering the entire section *!*/
 }
 
 .bg-footer{
@@ -327,7 +327,7 @@ body {
 
 
 /* Title */
-#our_packages_v2Rebuild h3 {
+.our_packages_v2Rebuild h3 {
     background-color: var(--our-packages);
     color: black;
     font-weight: bold;
@@ -340,22 +340,22 @@ body {
 
 #our_packages_v2RebuildNew{
     color: var(--boja_our_packages_old_site);
-    border: 5px solid var(--our-packages);
-    margin-top: 10px;
+    /*border: 5px solid var(--our-packages);*/
+    /*margin-top: 10px;*/
     background-color: var(--our-packages);
-    height: 60px;
+    /*height: 60px;*/
     padding-top: 10px;
 }
 
 /* Carousel image styling */
-#our_packages_v2Rebuild .carousel-inner img {
+.our_packages_v2Rebuild .carousel-inner img {
     height: 120px;
     object-fit: scale-down;
     width: auto;
     max-width: 180%;
     border: 4px solid var(--our-packages);
 }
-#our_packages_v2Rebuild .carousel-inner img:hover{
+.our_packages_v2Rebuild .carousel-inner img:hover{
     border: 5px solid #ffaf45;
     cursor: pointer;
 }
