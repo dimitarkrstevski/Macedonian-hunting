@@ -349,10 +349,10 @@ body {
 
 /* Carousel image styling */
 .our_packages_v2Rebuild .carousel-inner img {
-    height: 120px;
+    /*height: 120px;*/
     object-fit: scale-down;
     width: auto;
-    max-width: 180%;
+    /*max-width: 180%;*/
     border: 4px solid var(--our-packages);
 }
 .our_packages_v2Rebuild .carousel-inner img:hover{
