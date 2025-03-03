@@ -356,7 +356,7 @@ body {
     border: 4px solid var(--our-packages);
 }
 .our_packages_v2Rebuild .carousel-inner img:hover{
-    border: 5px solid #ffaf45;
+    border: 4px solid #ffaf45;
     cursor: pointer;
 }
 .clickable-image {
