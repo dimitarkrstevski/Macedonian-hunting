@@ -117,8 +117,12 @@ body {
 
 .content-color {
     background-color: var(--footer-boja);
-    max-width: 1075px;
-    padding-top: 10px;
+    /*max-width: 1075px;*/
+    /*padding-top: 10px;*/
+}
+
+#priceCard {
+    background-color: #6a6f5d;
 }
 
 .accordion-item:first-of-type .accordion-button {
@@ -302,7 +306,11 @@ body {
     border: none !important;
 }
 
-.card {
+/*.card {*/
+/*    border: none !important;*/
+/*}*/
+
+.card-noBorder {
     border: none !important;
 }
 
