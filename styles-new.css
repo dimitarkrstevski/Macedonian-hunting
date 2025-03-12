@@ -277,7 +277,7 @@ body {
     }
 }
 .carousel-caption label{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -353,6 +353,15 @@ body {
     background-color: var(--our-packages);
     /*height: 60px;*/
     padding-top: 10px;
+}
+
+
+.custom-header{
+    background-color: var(--our-packages);
+}
+
+.custom-navbar-color {
+    color: var(--boja_our_packages_old_site) !important;
 }
 
 /* Carousel image styling */
@@ -462,4 +471,18 @@ font-weight: bold;
 
 .text-light{
     background-color:var(--footer-boja);
+}
+
+.carousel-caption {
+    top: 6% !important;
+    left: unset !important;
+    right: unset !important;
+}
+.carousel-indicators {
+    display: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #ffaf45 !important;
+    border-color: #ffaf45 !important;
 }
